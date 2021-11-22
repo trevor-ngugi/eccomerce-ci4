@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 use App\Models\UserModel;
+use App\Models\DetailsModels;
+
 
 class Auth extends BaseController
 {
@@ -12,9 +14,21 @@ class Auth extends BaseController
     public function processLogin(){
         //login backend functionality
         echo "login works";
-       $userModel=new UserModel();
-       $user_details=$userModel->getOneUser();
-       echo "<pre>";print_r($user_details);
+        
+        $userModel=new UserModel();
+        $user_details=$userModel->getOneUser();
+        // echo "<pre>";print_r($user_details);
+        $session=session();
+        $session->set('user_details',$user_details);
+        return redirect()->to('auth/homePage');
+
+       
+
+        // $session=session();
+        // $session->set('user_details',$user_details);
+        // return redirect()->to('auth/homePage');
+       
+
     }
     public function homePage(){
         //load user homepage
