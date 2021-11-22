@@ -14,7 +14,8 @@ class Auth extends BaseController
     public function processLogin(){
         //login backend functionality
         echo "login works";
-        
+
+        //$userModel=new App\Models\UserModel();
         $userModel=new UserModel();
         $user_details=$userModel->getOneUser();
         // echo "<pre>";print_r($user_details);
