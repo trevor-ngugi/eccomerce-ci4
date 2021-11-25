@@ -12,26 +12,53 @@
 </head>
 
 <body>
-    <h1>users home page<h1>
-            <?php
-            $session = session();
-            $user_details = $session->get('user_details');
-            // echo "<pre>";print_r($user_details);die;
-            $firstname = $user_details[0];
-            $lastname = $user_details[1];
-            $fullname = $firstname . " " . $lastname;
-            echo "welcome $fullname";
+    <h1>users home page</h1>
+    <?php
+    $session = session();
+    $user_details = $session->get('user_details');
+    // echo "<pre>";print_r($user_details);die;
+    $firstname = $user_details[0];
+    $lastname = $user_details[1];
+    $fullname = $firstname . " " . $lastname;
+    // echo "welcome $fullname";
 
-            ?>
-            <br>
-            <button id="images_toggle_btn" class="btn btn-primary">toggle image show</button>
-            <br>
-            <div id="images_div">
-                <img src="<?php echo base_url('images/pic1.jpeg'); ?>" alt="image from splash">
-                <br>
-                <img src="<?php echo base_url('images/pic2.jpeg'); ?>" alt="boy">
-            </div>
-            <script type="text/javascript" src="<?php echo base_url('js/main.js') ?>"></script>
+    ?>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Witty outfitters</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">men</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">women</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">children</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">pets</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <br>
+    <button id="images_toggle_btn" class="btn btn-primary">toggle image show</button>
+    <br>
+    <div id="images_div">
+        <img src="<?php echo base_url('images/pic1.jpeg'); ?>" alt="image from splash">
+        <br>
+        <img src="<?php echo base_url('images/pic2.jpeg'); ?>" alt="boy">
+    </div>
+    <script type="text/javascript" src="<?php echo base_url('js/main.js') ?>"></script>
 </body>
 
 </html>
