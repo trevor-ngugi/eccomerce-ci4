@@ -64,7 +64,43 @@
     </div>
     <br>
 
-    <p>show all</p>
+    <p <span style="text-decoration:  underline; text-align: left;"></span>show all</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="card" >
+                    <img src="<?php echo base_url('images/pic1.jpeg'); ?>" alt="image from splash">
+                    <div class="card-body">
+                        <p class="card-text">description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <img src="<?php echo base_url('images/pic1.jpeg'); ?>" alt="image from splash">
+                    <div class="card-body">
+                        <p class="card-text">description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" >
+                    <img src="<?php echo base_url('images/pic1.jpeg'); ?>" alt="image from splash">
+                    <div class="card-body">
+                        <p class="card-text">description.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" >
+                    <img src="<?php echo base_url('images/pic1.jpeg'); ?>" alt="image from splash">
+                    <div class="card-body">
+                        <p class="card-text">description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <br>
     <button id="images_toggle_btn" class="btn btn-primary">toggle image show</button>
     <br>
