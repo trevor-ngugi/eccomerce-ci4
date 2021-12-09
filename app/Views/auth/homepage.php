@@ -9,6 +9,7 @@
     <link href="<?php echo base_url('css/styles.css') ?>" rel="stylesheet">
     <script type="text/javascript" src="<?php echo base_url('js/jquery.min.js') ?>"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/22de2a47bc.js"></script>
 </head>
 
 <body>
@@ -48,7 +49,7 @@
             </ul>
         </div>
     </nav>
-
+<!-- suppose to show the categories -->
     <div class="container">
         <div class="row">
             <div class="col-sm">
@@ -63,7 +64,7 @@
         </div>
     </div>
     <br>
-
+<!-- card description -->
     <p <span style="text-decoration:  underline; text-align: left;"></span>show all</p>
     <div class="container">
         <div class="row">
@@ -101,6 +102,7 @@
             </div>
         </div>
     </div>
+    <!-- toggle button -->
     <br>
     <button id="images_toggle_btn" class="btn btn-primary">toggle image show</button>
     <br>
@@ -109,7 +111,15 @@
         <br>
         <img src="<?php echo base_url('images/pic2.jpeg'); ?>" alt="boy">
     </div>
+    <!-- footer -->
+    <i class="fa fa-instagram" aria-hidden="true"></i>
+    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+    <i class="fa fa-pinterest" aria-hidden="true"></i>
+    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+    <i class="fa fa-spotify" aria-hidden="true"></i>
+    <!-- scripts -->
     <script type="text/javascript" src="<?php echo base_url('js/main.js') ?>"></script>
+
 </body>
 
 </html>
