@@ -48,8 +48,23 @@
             </ul>
         </div>
     </nav>
-    
 
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <img src="<?php echo base_url('images/pic1.jpeg'); ?>" alt="image from splash">
+            </div>
+            <div class="col-sm">
+                <img src="<?php echo base_url('images/pic1.jpeg'); ?>" alt="image from splash">
+            </div>
+            <div class="col-sm">
+                <img src="<?php echo base_url('images/pic1.jpeg'); ?>" alt="image from splash">
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <p>show all</p>
     <br>
     <button id="images_toggle_btn" class="btn btn-primary">toggle image show</button>
     <br>
