@@ -15,12 +15,12 @@
 <body>
     <h1>users home page</h1>
     <?php
-    $session = session();
-    $user_details = $session->get('user_details');
+    // $session = session();
+    // $user_details = $session->get('user_details');
     // echo "<pre>";print_r($user_details);die;
-    $firstname = $user_details[0];
-    $lastname = $user_details[1];
-    $fullname = $firstname . " " . $lastname;
+    // $firstname = $user_details[0];
+    // $lastname = $user_details[1];
+    // $fullname = $firstname . " " . $lastname;
     // echo "welcome $fullname";
 
     ?>
